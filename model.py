@@ -19,10 +19,10 @@ from keras.backend import clear_session
 # In[30]:
 
 
-(x_train, y_train), (x_test, y_test)  = mnist.load_data()
-x_train.shape
+(xTrain, yTrain), (xTest, yTest)  = mnist.load_data()
+xTrain.shape
 
-img = x_train[0].shape
+img = xTrain[0].shape
 print("size of image",img)
 xTrain = xTrain.reshape(-1, 28, 28, 1)
 xTest = xTest.reshape(-1, 28,28 , 1)
