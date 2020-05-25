@@ -1,5 +1,5 @@
 #To open the file.
-programfile = open('/mlops/model.py','r')
+programfile = open('/root/mlops/model.py','r')
 #Read the code
 code = programfile.read()
 
