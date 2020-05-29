@@ -92,7 +92,7 @@ message.attach(MIMEText(content,'plain'))
 from email.mime.base import MIMEBase
 from email import encoders
 filename="prg.py"
-attachment=open('home\prg.py', 'rb')
+attachment=open('/home/prg.py', 'rb')
 p=MIMEBase('application','octet-stream')
 p.set_payload((attachment).read())
 encoders.encode_base64(p)
