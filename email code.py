@@ -9,7 +9,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 host_address="arushishukla09@gmail.com"
 host_pass="swift9415581194papa"
-guest_address="aushishukla09@gmail.com"
+guest_address="arushishukla09@gmail.com"
 subject="Model Accuracy"
 content='''Hi,developer
             You have not achieved your desired accuracy for this model
