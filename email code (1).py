@@ -18,7 +18,7 @@ message=MIMEMultipart()
 message['From']=host_address
 message['To']=guest_address
 message['Subject']=subject
-message.attach(MIMEText(content,'plain'))
+message.attach(MIMEText('accuracy.txt','plain'))
 
 
 
@@ -27,7 +27,7 @@ message.attach(MIMEText(content,'plain'))
 #attaching files
 from email.mime.base import MIMEBase
 from email import encoders
-filename="wines.csv"
+filename="prg.py"
 attachment=open('/mlops/prg.py', 'rb')
 p=MIMEBase('application','octet-stream')
 p.set_payload((attachment).read())
@@ -40,7 +40,7 @@ message.attach(p)
 
 
 
-message.attach(MIMEText(content, 'plain'))
+message.attach(MIMEText('accuracy.txt', 'plain'))
 session=smtplib.SMTP("smtp.gmail.com",587)
 session.starttls()
 session.login(host_address,host_pass)
